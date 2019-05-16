@@ -6,5 +6,5 @@ import javax.inject.Singleton
 @Singleton
 class HauntActionProvider @Inject constructor() {
 
-    val hauntAction = "Boo!!!..."
+    var hauntAction = "Boo!!!..."
 }

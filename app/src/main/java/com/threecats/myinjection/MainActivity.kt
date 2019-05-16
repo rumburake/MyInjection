@@ -42,6 +42,15 @@ class MainActivity : AppCompatActivity() {
 
     fun draw() {
         val ghost = Ghost("Casper")
-        text_ghost.text = ghost.haunt()
+
+        text_ghost_1.text = ghost.haunt()
+
+        App.instance.ghosteryComponent.getHauntActionProvider().hauntAction = "Shooooo!!!..."
+
+        val laterGhost = Ghost("Fifi")
+
+        text_ghost_2.text = ghost.haunt()
+
+        text_ghost_3.text = laterGhost.haunt()
     }
 }
